@@ -64,6 +64,7 @@ px4_add_romfs_files(
 	1061_gazebo-classic_r1_rover
 	1062_flightgear_tf-r1
 	1070_gazebo-classic_boat
+	1423_gazebo-classic_wamv
 
 	2507_gazebo-classic_cloudship
 
@@ -73,7 +74,6 @@ px4_add_romfs_files(
 	4001_gz_x500
 	4002_gz_x500_depth
 	4003_gz_rc_cessna
-	4004_gz_standard_vtol
 
 	6011_gazebo-classic_typhoon_h480
 	6011_gazebo-classic_typhoon_h480.post
