@@ -120,39 +120,39 @@ execute_process(
 	)
 
 # git describe to X.Y.Z version
-string(REPLACE "." ";" VERSION_LIST ${PX4_GIT_TAG})
-
-# major version
-list(GET VERSION_LIST 0 PX4_VERSION_MAJOR)
-string(REPLACE "v" "" PX4_VERSION_MAJOR ${PX4_VERSION_MAJOR})
-# minor version
-list(GET VERSION_LIST 1 PX4_VERSION_MINOR)
-# patch version
-list(GET VERSION_LIST 2 PX4_VERSION_PATCH)
-string(REPLACE "-" ";" PX4_VERSION_PATCH ${PX4_VERSION_PATCH})
-list(GET PX4_VERSION_PATCH 0 PX4_VERSION_PATCH)
-
-message(STATUS "PX4 version: ${PX4_GIT_TAG} (${PX4_VERSION_MAJOR}.${PX4_VERSION_MINOR}.${PX4_VERSION_PATCH})")
-
-define_property(GLOBAL PROPERTY PX4_MODULE_LIBRARIES
-                 BRIEF_DOCS "PX4 module libs"
-                 FULL_DOCS "List of all PX4 module libraries"
-                 )
-
-define_property(GLOBAL PROPERTY PX4_KERNEL_MODULE_LIBRARIES
-                 BRIEF_DOCS "PX4 kernel side module libs"
-                 FULL_DOCS "List of all PX4 kernel module libraries"
-                 )
-
-define_property(GLOBAL PROPERTY PX4_MODULE_PATHS
-                 BRIEF_DOCS "PX4 module paths"
-                 FULL_DOCS "List of paths to all PX4 modules"
-                 )
-define_property(GLOBAL PROPERTY PX4_SRC_FILES
-                 BRIEF_DOCS "src files from all PX4 modules & libs"
-                 FULL_DOCS "SRC files from px4_add_{module,library}"
-                 )
-
+#string(REPLACE "." ";" VERSION_LIST ${PX4_GIT_TAG})
+#
+## major version
+#list(GET VERSION_LIST 0 PX4_VERSION_MAJOR)
+#string(REPLACE "v" "" PX4_VERSION_MAJOR ${PX4_VERSION_MAJOR})
+## minor version
+#list(GET VERSION_LIST 1 PX4_VERSION_MINOR)
+## patch version
+#list(GET VERSION_LIST 2 PX4_VERSION_PATCH)
+#string(REPLACE "-" ";" PX4_VERSION_PATCH ${PX4_VERSION_PATCH})
+#list(GET PX4_VERSION_PATCH 0 PX4_VERSION_PATCH)
+#
+#message(STATUS "PX4 version: ${PX4_GIT_TAG} (${PX4_VERSION_MAJOR}.${PX4_VERSION_MINOR}.${PX4_VERSION_PATCH})")
+#
+#define_property(GLOBAL PROPERTY PX4_MODULE_LIBRARIES
+#                 BRIEF_DOCS "PX4 module libs"
+#                 FULL_DOCS "List of all PX4 module libraries"
+#                 )
+#
+#define_property(GLOBAL PROPERTY PX4_KERNEL_MODULE_LIBRARIES
+#                 BRIEF_DOCS "PX4 kernel side module libs"
+#                 FULL_DOCS "List of all PX4 kernel module libraries"
+#                 )
+#
+#define_property(GLOBAL PROPERTY PX4_MODULE_PATHS
+#                 BRIEF_DOCS "PX4 module paths"
+#                 FULL_DOCS "List of paths to all PX4 modules"
+#                 )
+#define_property(GLOBAL PROPERTY PX4_SRC_FILES
+#                 BRIEF_DOCS "src files from all PX4 modules & libs"
+#                 FULL_DOCS "SRC files from px4_add_{module,library}"
+#                 )
+#
 #=============================================================================
 # configuration
 #
